@@ -13,3 +13,5 @@ Mirth Connect
 5. Destination Code: return 0;
 6. Source Transformer code: pdf-jpg-dicom-transformer.js
 7. Sample Message: Sample.json
+
+Contect Us: info@anotherlambda.com
