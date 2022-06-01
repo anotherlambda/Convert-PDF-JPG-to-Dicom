@@ -97,7 +97,6 @@ dcmObject.putString(Tag.ImplementationVersionName,VR.SH, "dcm4che-2.0");
 dcmObject.putString(Tag.SpecificCharacterSet,VR.CS, "ISO_IR 192");
 dcmObject.putString(Tag.SOPClassUID,VR.UI, "1.2.840.10008.5.1.4.1.1.104.1");
 
-
 tmp = SerializerFactory.getSerializer('DICOM').toXML(FileUtil.encode(DICOMUtil.dicomObjectToByteArray(dcmObject)));
 var dcmByte = org.apache.commons.codec.binary.Base64.decodeBase64(SerializerFactory.getSerializer('DICOM').fromXML(tmp));
 var dateString = Number(new Date()).toString();
@@ -108,8 +107,6 @@ org.apache.commons.io.FileUtils.writeByteArrayToFile(new java.io.File(''+OutDico
 	
 	}
 } 
-
-
 
 //Creating Dicom from Image jpg/pgeg
 else if(ScanDocType=="JPEG" || ScanDocType=="JPG")
